@@ -1,0 +1,13 @@
+[package]
+name = "log-haul"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+journald = "0.7.0"
+
+[profile.release]
+opt-level = "z"
+codegen-units = 1
